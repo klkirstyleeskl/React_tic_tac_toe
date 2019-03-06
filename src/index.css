@@ -14,7 +14,8 @@ code {
 }
 
 .box-container{
-  display: flex-grid;
+
+  display: grid-flex;
   align-items: center;
 
 }
