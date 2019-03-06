@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class Tile extends Component{
+const Tile = (props) => {
 
-
-
-
-    render(){
-        return(
-            <div className="tile-container">
-            </div>
+     return(
+        <button className="button">  {props.value}  </button>
             
-        )
-    }
+      )
+    
 }
+
+
+
 
 
 

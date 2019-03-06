@@ -1,34 +1,42 @@
 import React, { Component } from 'react';
 import Tile from "./Tile"
 
-class Box extends Component{
+const  Box = (props) => {
+
+    const data = props.data.map((el) => {
+        return <Tile value={el}></Tile>
+    })
 
 
+    function click(){
+
+    }
 
 
-    render(){
         return(
-            <div>
+            <div className="box-box">
             <div className="box-container">
-            <Tile className="Tile-0">Tile0</Tile>
-            <Tile className="Tile-1">Tile1</Tile>
-            <Tile className="Tile-2">Tile2</Tile>
+            {data}
+            {/* <div className="box-container">
+            <Tile className="Tile-0" value="0" on/>
+            <Tile className="Tile-1" value="1"/>
+            <Tile className="Tile-2" value="2"/>
             </div>
             <div className="box-container">
-            <Tile className="Tile-3">Tile3</Tile>
-            <Tile className="Tile-4">Tile4</Tile>
-            <Tile className="Tile-5">Tile5</Tile>
+            <Tile className="Tile-3" value="3"/>
+            <Tile className="Tile-4" value="4"/>
+            <Tile className="Tile-5" value="5"/>
             </div>
             <div className="box-container">
-            <Tile className="Tile-6">Tile6</Tile>
-            <Tile className="Tile-7">Tile7</Tile>
-            <Tile className="Tile-8">Tile8</Tile>
+            <Tile className="Tile-6" value="6"/>
+            <Tile className="Tile-7" value="7"/>
+            <Tile className="Tile-8" value="8"/>
+            </div> */}
             </div>
             </div>
             
         )
     }
-}
 
 
 

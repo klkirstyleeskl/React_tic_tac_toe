@@ -14,13 +14,13 @@ code {
 }
 
 .box-container{
-  display: flex;
+  display: flex-grid;
   align-items: center;
 
 }
 
 
-.tile-container{
+.button{
   color: red;
   border: 1px solid black;
   height: 100px;
