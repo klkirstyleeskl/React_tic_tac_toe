@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Box from '../components/Box';
 
 
 class GameContainer extends Component{
@@ -9,7 +10,7 @@ class GameContainer extends Component{
         return(
             <div className="game-container">
             <h1>Tic Tac Toe</h1>
-
+            <Box/>
             </div>
         )
     }
